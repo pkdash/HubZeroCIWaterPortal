@@ -1,0 +1,89 @@
+/**
+ * @package     hubzero-cms
+ * @file        components/com_kb/kb.css
+ * @copyright   Copyright 2005-2011 Purdue University. All rights reserved.
+ * @license     http://www.gnu.org/licenses/lgpl-3.0.html LGPLv3
+ */
+
+/*
+
+	-- -- -- -- -- -- --
+	com_kb CSS
+	-- -- -- -- -- -- --
+
+*/
+
+/* Content blocks */
+	.com_kb .container-block {
+		border: 2px solid #e9e9e9;
+		background-color: #fff;
+		margin: 0;
+		padding: 0 15px;
+	}
+	.com_kb .container-block h3 {
+		margin: 0 -15px 1em -15px;
+		border: none;
+		border-bottom: 2px solid #e9e9e9;
+		font-size: 135%;
+	}
+
+/* Entries (list) */
+	.com_kb ul.articles {
+		list-style: none;
+		margin-left: 0;
+	}
+	.com_kb ul.articles li {
+		margin-left: 0;
+		padding-left: 1em;
+		list-style: none;
+		position: relative;
+		background-image: none;
+	}
+	.com_kb ul.articles li:before {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-family: "Fontcons";
+		content: "\f016";
+		color: #aaa;
+	}
+
+/* Entries (table) */
+	.com_kb .entries .entry-id:before {
+		content: "\f016";
+	}
+	.com_kb .entries tbody td.voting,
+	.com_kb .voting {
+		text-align: right;
+	}
+	.com_kb p.voting {
+		float: right;
+		min-width: 10em;
+		margin: 0.7em 0 0.7em 0;
+		padding: 0;
+	}
+	.com_kb .container-block .entry-details {
+		padding: 0.7em 0 0.7em 0;
+	}
+	.com_kb .entry-popularity {
+		display: none;
+	}
+
+/* Tags */
+	.entry-tags {
+		margin: 0;
+		padding: 0.5em 0 1.5em 0;
+		color: #aaa;
+	}
+	.entry-tags p {
+		display: none;
+	}
+	ol.tags::after {
+		clear: left;
+	}
+
+/* IE 7 hacks */
+	html>body .aside .container .starter .starter-point {
+		*top: -1.2em;
+	}

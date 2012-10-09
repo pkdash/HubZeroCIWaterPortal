@@ -1,0 +1,131 @@
+/**
+ * @package     hubzero-cms
+ * @file        plugins/groups/wishlist/wishlist.css
+ * @copyright   Copyright 2005-2011 Purdue University. All rights reserved.
+ * @license     http://www.gnu.org/licenses/lgpl-3.0.html LGPLv3
+ */
+
+/* Sections */
+	.group_wishlist .section {
+		padding: 0;
+	}
+
+/* Entries (table) */
+	.entry-details a {
+		color: #666;
+		border-bottom: 1px dotted #666;
+	}
+	.entry-details a:hover {
+		color: #000;
+		border-bottom: 1px solid #333;
+	}
+
+	.entry-comments {
+		padding-right: 16px;
+		background: url("/components/com_wishlist/assets/img/bullets_small.png") no-repeat right -428px;
+	}
+
+	.ideas .entry-id:before {
+		content: "\f078";
+	}
+	.ideas .entry-id {
+		display: none;
+	}
+	.ideas tbody th {
+		background: url("/components/com_wishlist/assets/img/lightbulb_off.png") right 15px no-repeat;
+	}
+	/* Accepted */
+	.ideas tbody tr.accepted {
+		background: #ffe;
+	}
+	.ideas tbody tr.accepted th {
+		background: url("/components/com_wishlist/assets/img/lightbulb.png") right 15px no-repeat;
+	}
+	/* Granted */
+	.ideas tbody tr.granted th {
+		background: url("/components/com_wishlist/assets/img/lightbulb_granted.png") right 15px no-repeat;
+	}
+	.ideas tbody tr.granted {
+		background: #f7fef4;
+	}
+	/* Rejected */
+	.ideas tbody tr.rejected th {
+		background: url("/components/com_wishlist/assets/img/lightbulb_rejected.png") right 15px no-repeat;
+	}
+	.ideas tbody tr.rejected {
+		background: #fff6f4;
+	}
+	/* Flagged */
+	.ideas tbody tr.flagged th {
+		background: url("/components/com_wishlist/assets/img/lightbulb_flagged.png") right 15px no-repeat;
+	}
+	/* Withdrawn */
+	.ideas tbody tr.withdrawn {
+		background: #f1f1f1;
+	}
+	.ideas tbody tr.withdrawn th {
+		background: url("/components/com_wishlist/assets/img/lightbulb_withdrawn.png") right 15px no-repeat;
+	}
+	/* Private */
+	.ideas tbody tr.private {
+		background-image: none;
+	}
+	.ideas tbody tr.private th {
+		background-image: url("/components/com_wishlist/assets/img/lightbulb_private.png"); /* lock.png */
+	}
+	.entries tbody td.voting,
+	.voting {
+		text-align: right;
+		white-space: nowrap;
+	}
+	p.voting {
+		float: right;
+		min-width: 10em;
+		margin: 0.7em 0 0.7em 0;
+		padding: 0;
+	}
+	.container-block .entry-details {
+		padding: 0.7em 0 0.7em 0;
+	}
+	.entry-popularity {
+		display: none;
+	}
+	.rankit,
+	.ideas .ranking span {
+		text-transform: uppercase;
+		font-size: xx-small;
+		font-weight: bold;
+		white-space: nowrap;
+	}
+	.ideas .ranking .accepted {
+		color: #f1c037;
+	}
+	.ideas .ranking .granted {
+		color: #7AAB69;
+	}
+	.ideas .ranking .flagged,
+	.ideas .ranking .rejected {
+		color: #CC0000;
+	}
+	.ideas .ranking .withdrawn {
+		color: #bbb;
+	}
+/* Priority */
+	.priority-level-base {
+		display: block;
+		margin: 0;
+		padding: 0;
+		height: 3px; 
+		background-color: #ddd;
+		width: 5.5em;
+	}
+	.priority-level {
+		display: block;
+		margin: 0;
+		padding: 0;
+		height: 3px; 
+		background-color: #aaa;
+	}
+	.priority-level span {
+		display: none;
+	}

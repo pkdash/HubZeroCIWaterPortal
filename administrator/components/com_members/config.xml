@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+@package        hubzero-cms
+@file           administrator/components/com_members/config.xml
+@copyright      Copyright 2005-2011 Purdue University. All rights reserved.
+@license        http://www.gnu.org/licenses/lgpl-3.0.html LGPLv3
+
+Copyright 2005-2011 Purdue University. All rights reserved.
+
+This file is part of: The HUBzero(R) Platform for Scientific Collaboration
+
+The HUBzero(R) Platform for Scientific Collaboration (HUBzero) is free
+software: you can redistribute it and/or modify it under the terms of
+the GNU Lesser General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any
+later version.
+
+HUBzero is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+HUBzero is a registered trademark of Purdue University.
+-->
+
+<config>
+	<params>
+		<param name="privacy" type="list" default="0" label="Default Privacy" description="Set the default privacy for new profiles">
+			<option value="0">Private</option>
+			<option value="1">Public</option>
+		</param>
+		<param name="bankAccounts" type="list" default="0" label="Bank Accounts" description="Enable Bank Accounts">
+			<option value="1">On</option>
+			<option value="0">Off</option>
+		</param>
+		<param name="defaultpic" type="text" menu="hide" default="/components/com_members/assets/img/profile.gif" label="Default picture" description="Default placeholder image for user pictures" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="webpath" type="text" menu="hide" default="/site/members" label="Upload path" description="File path for pictures" />
+		<param name="homedir" type="text" menu="hide" default="/home" label="Home directory path" description="Hub users' home directory path (typically '/home/{hubname}')" />
+		<param name="maxAllowed" type="text" menu="hide" default="40000000" label="Max upload" description="Maximum upload file size" />
+		<param name="file_ext" type="text" menu="hide" label="Extensions" default="jpg,jpeg,jpe,bmp,tif,tiff,png,gif" description="Allowed file types" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="user_messaging" type="list" default="1" label="User-To-User Messaging" description="Allow/Disallow user-to-user messaging">
+			<option value="0">None</option>
+			<option value="1">Users with common groups</option>
+			<option value="2">Any User</option>
+		</param>
+		<param name="employeraccess" type="list" default="0" label="Allow Employer Access" description="Determine whether to show resume on a private profile to subscribed employers (if Jobs Component is active)">
+			<option value="0">Disallow</option>
+			<option value="1">Allow</option>
+		</param>
+		<param name="gidNumber" type="text" default="100" label="Group ID number" />
+		<param name="gid" type="text" default="users" label="Group ID" />
+		<param name="shadowMax" type="text" default="" label="Shadow Maximum" />
+		<param name="shadowMin" type="text" default="0" label="Shadow Minimum" />
+		<param name="shadowWarning" type="text" default="7" label="Shadow Warning" />
+	</params>
+</config>

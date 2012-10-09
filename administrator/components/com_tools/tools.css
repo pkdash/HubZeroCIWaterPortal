@@ -1,0 +1,54 @@
+/**
+ * @package     hubzero-cms
+ * @file        administrator/components/com_resources/resources.css
+ * @copyright   Copyright 2005-2011 Purdue University. All rights reserved.
+ * @license     http://www.gnu.org/licenses/lgpl-3.0.html LGPLv3
+ */
+
+/*
+    - - - - - - - - -
+    com_tools
+    - - - - - - - - -
+*/
+	section .state.registered:before {
+		content: "W";
+	}
+	section .state.uploaded:before {
+		content: "c";
+		font-size: 18px;
+	}
+	section .state.created:before {
+		content: "F";
+	}
+	section .state.installed:before {
+		content: "~";
+	}
+	section .state.updated:before {
+		content: "1";
+	}
+	section .state.approved:before {
+		content: "2";
+	}
+	section .state.abandoned:before {
+		content: "!";
+	}
+	section .state.retired:before {
+		content: "d";
+	}
+	section .state.unknown:before {
+		content: "?";
+	}
+	table.adminlist a.active {
+		color: #7F913C;
+		color: #666;
+	}
+	table.adminlist a.active:before {
+		font-size: 1.2em;
+		content: "\2022";
+		margin-right: 0.5em;
+	}
+	table.adminlist a.inactive {
+		color: #c55500;
+		color: #999;
+		padding-left: 1.1em;
+	}

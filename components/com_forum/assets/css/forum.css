@@ -1,0 +1,149 @@
+/**
+ * @package	 hubzero-cms
+ * @file		components/com_feedback/feedback.css
+ * @copyright   Copyright 2005-2011 Purdue University. All rights reserved.
+ * @license	 http://www.gnu.org/licenses/lgpl-3.0.html LGPLv3
+ */
+
+/*
+
+	-- -- -- -- -- -- --
+	com_forum CSS
+	-- -- -- -- -- -- --
+
+*/
+	.section h3:first-child {
+		margin-top: 0;
+	}
+
+/* Entries Table */
+	.entry-date-at {
+		visibility: hidden;
+	}
+	.entry-date-on {
+		visibility: hidden;
+	}
+	.aside .entry-date-at {
+		display: none;
+	}
+	.aside .entry-date-on {
+		display: inline;
+	}
+
+	.entries .edit,
+	.entries .delete {
+		display: inline-block;
+		width: 1em;
+		height: 1em;
+		overflow: hidden;
+		font-size: 1em;
+		line-height: 1;
+		border: none;
+		margin: 0 .2em 0 0;
+		padding: 0;
+	}
+	.entries tfoot {
+		text-align: right;
+	}
+	.entry-details {
+		display: block;
+	}
+	.entries caption a {
+		float: right;
+	}
+	.entries caption .edit {
+		left: ;
+	}
+	
+	#content-header-extra .comments:before {
+		font-family: "Fontcons";
+		content: "\f086";
+	}
+	#content-header-extra .categories:before {
+		font-family: "Fontcons";
+		content: "\f07b";
+	}
+	.com_forum .entries .entry-id:before {
+		content: "\f086";
+	}
+	.com_forum .entries .entry-id {
+		*zoom:expression(this.runtimeStyle['zoom']='1', this.innerHTML='<small class="entry-id-before">&#xf086;</small>' + this.innerHTML);
+	}
+	.com_forum .entries .closed .entry-id:before {
+		content: "\f023";
+	}
+	.com_forum .entries .sticky .entry-id:before {
+		content: "\273D";
+	}
+	.com_forum .categories .entry-id:before {
+		content: "\f07b";
+	}
+	.com_forum .categories .entry-id {
+		*zoom:expression(this.runtimeStyle['zoom']='1', this.innerHTML='<small class="entry-id-before">&#xf07b;</small>' + this.innerHTML);
+	}
+	.com_forum .categories .closed .entry-id:before {
+		content: "\f023";
+	}
+
+	.entry-details a {
+		color: #666;
+		border-bottom: 1px dotted #999;
+	}
+	.entries .entry-options {
+		text-align: right;
+		white-space: nowrap;
+	}
+	/* tbody */
+	.entries .topic {
+		font-weight: bold;
+		margin: 0;
+	}
+
+/* Aside */
+	/* Lists */
+	.aside .container .tags li {
+		background: none;
+		padding: 0 4px 0 0;
+	}
+	.com_forum .aside .container table {
+		border: none;
+		margin: 1em 0 2em 0;
+	}
+	.com_forum .aside .container table th {
+		padding-left: 0;
+		text-align: left;
+	}
+	.com_forum .aside .container table td {
+		text-align: right;
+		padding-right: 0;
+	}
+	.com_forum .aside .container table tr:last-child th,
+	.com_forum .aside .container table tr:last-child td {
+		border-bottom: none;
+	}
+	.com_forum .aside .container .entry-author {
+		display: block;
+		font-size: 90%;
+	}
+	.com_forum .aside .container .entry-author a {
+		color: #666;
+		border-bottom: 1px dotted #999;
+	}
+
+/* Comments */
+	ol.comments + .list-footer {
+		margin-top: 2em;
+	}
+
+/* IE 7 */
+	html>body .entries .entry-options .edit,
+	html>body .entries .entry-options .delete {
+		*display: block;
+		*float: right;
+	}
+	html>body .entries caption a.edit,
+	html>body .entries caption a.delete {
+		*display: block;
+		*margin-top: -1.5em;
+		*background-position: 0 0;
+	}

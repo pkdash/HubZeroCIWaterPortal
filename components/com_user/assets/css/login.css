@@ -1,0 +1,191 @@
+/**
+ * @package     hubzero-cms
+ * @file        components/com_user/assets/css/login.css
+ * @copyright   Copyright 2005-2011 Purdue University. All rights reserved.
+ * @license     http://www.gnu.org/licenses/lgpl-3.0.html LGPLv3
+ */
+
+/* Container styles */
+#authentication {
+	overflow: hidden;
+	padding: 25px 25px 10px 25px;
+	margin: 35px auto;
+	border: 1px solid #C5C3C3;
+	width: 300px;
+	box-shadow: 2px 2px 2px #aaa;
+	font-family: 'Cabin', sans-serif;
+	background: #fff;
+	position: relative;
+}
+#authentication.multiAuth {
+	width: 650px;
+	position: relative;
+}
+#authentication.multiAuth #inner:before {
+	content: "or";
+	font-size: 20px;
+	padding: 10px;
+	font-style: italic;
+	position: absolute;
+	left: 330px;
+	top: 130px;
+	background: #FFF;
+	z-index: 500;
+}
+#authentication.multiAuth #inner {
+	background: url('/components/com_user/assets/img/line.png') 50% 50% repeat-y;
+	overflow: hidden;
+}
+#authentication .error {
+	display: none;
+	margin-top: 0;
+}
+#authentication .two {
+	margin: 0;
+	width: 325px;
+}
+p.callToAction {
+	text-align: center;
+}
+
+/* External auth providers */
+#authentication #providers h3 {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+#authentication.multiAuth #providers h3 {
+	display: inline-block;
+}
+#authentication #providers a {
+	color: #fff;
+	font-size: 17px;
+	font-weight: normal;
+	text-align: center;
+	padding: 0.5em 1em 0.5em 60px;
+}
+#authentication #providers a:before {
+	padding: 9px 0.3em;
+}
+
+/* Hub credentials section */
+#authentication #credentials-hub-inner .labelInputPair label {
+	display: none;
+}
+#authentication.multiAuth #credentials-hub-inner {
+	padding-left: 50px;
+}
+#authentication.multiAuth #credentials-hub {
+	opacity: .5;
+}
+#authentication.multiAuth #credentials-hub:hover {
+	-webkit-transition: all ease-in-out 0.2s;
+	-moz-transition: all ease-in-out 0.2s;
+	-o-transition: all ease-in-out 0.2s;
+	transition: all ease-in-out 0.2s;
+	opacity: 1;
+}
+#authentication.singleAuth #credentials-hub-inner h3 {
+	display: none;
+}
+#authentication.multiAuth #credentials-hub-inner h3 {
+	display: inline-block;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+#authentication #credentials-hub-inner div.labelInputPair {
+	position: relative;
+	overflow: hidden;
+}
+#authentication #credentials-hub-inner a.forgots {
+	position: absolute;
+	right: 10px;
+	padding-top: 9px;
+	border-bottom: none;
+	text-decoration: none;
+	opacity: .6;
+	font-size: 11px;
+}
+#authentication #credentials-hub-inner a.forgots:hover {
+	opacity: 1;
+}
+#authentication #credentials-hub div.submission {
+	margin-top: 5px;
+}
+#authentication #credentials-hub #login-submit {
+	margin-top: 15px;
+}
+#authentication #credentials-hub #remember-me-label {
+	vertical-align: middle;
+}
+#authentication #credentials-hub input[type="text"],
+#authentication #credentials-hub input[type="password"] {
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 10px 100px 10px 30px;
+	border-radius: 4px;
+	border: 1px solid #C5C3C3;
+	background-color: #F0F0F0;
+	background-repeat: no-repeat;
+	background-position: 7px 9px;
+	width: 100%;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#authentication #credentials-hub input[type="text"]:focus,
+#authentication #credentials-hub input[type="password"]:focus {
+	background-color: #FFF;
+}
+#authentication #credentials-hub input[type="text"] {
+	background-image: url('/components/com_user/assets/img/user.png');
+}
+#authentication #credentials-hub input[type="password"] {
+	background-image: url('/components/com_user/assets/img/padlock.png');
+}
+#authentication #credentials-hub input[type="submit"] {
+	width: 100%;
+	border: 1px solid #888;
+	border-radius: 4px;
+	background: #C5C3C3;
+	color: #fff;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 12px;
+	-webkit-transition: all ease-in-out 0.1s;
+	-moz-transition: all ease-in-out 0.1s;
+	-o-transition: all ease-in-out 0.1s;
+	transition: all ease-in-out 0.1s;
+	background: #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(#666666), to(#333333));
+	background: -webkit-linear-gradient(#666666, #333333);
+	background: -moz-linear-gradient(center top, #666 0%, #333 100%);
+	background: -moz-gradient(center top, #666 0%, #333 100%);
+	background: -o-linear-gradient(#666, #333);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#666666,endColorstr=#333333);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#666666, endColorstr=#333333)";
+}
+#authentication #credentials-hub input[type="submit"]:hover {
+	-webkit-box-shadow: inset 0 2px 7px #999;
+	-moz-box-shadow: inset 0 2px 7px #999;
+	box-shadow: inset 0 2px 7px #999;
+}
+#authentication #credentials-hub input[type="submit"]:active {
+	-webkit-box-shadow: inset 1px 2px 3px #111;
+	-moz-box-shadow: inset 1px 2px 3px #111;
+	box-shadow: inset 0 2px 2px #111;
+}
+
+/* IE 7 hacks */
+html>body #authentication #credentials-hub input[type="text"],
+html>body #authentication #credentials-hub input[type="password"] {
+	*width: 168px;
+}
+html>body #authentication.multiAuth #credentials-hub input[type="text"],
+html>body #authentication.multiAuth #credentials-hub input[type="password"] {
+	*width: 143px;
+}
+html>body #authentication.multiAuth #providers a {
+	*padding-left: 1em;
+	*width: 243px;
+}

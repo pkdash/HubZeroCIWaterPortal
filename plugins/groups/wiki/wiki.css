@@ -1,0 +1,483 @@
+/**
+ * @package	 hubzero-cms
+ * @file		plugins/groups/wiki/wiki.css
+ * @copyright   Copyright 2005-2011 Purdue University. All rights reserved.
+ * @license	 http://www.gnu.org/licenses/lgpl-3.0.html LGPLv3
+ */
+
+/* Sections */
+	.group_wiki .section {
+		padding: 0;
+	}
+	.group_wiki #hubForm label.hide {
+		display: none;
+	}
+	.group_wiki .comment-add-btn {
+		float: right;
+		margin-top: -1em;
+	}
+
+/* Wiki options */
+	#page_options li {
+		display: inline-block;
+		margin-left: 0.5em;
+	}
+
+/* Attachments */
+	#attachments {
+		margin: 0;
+		padding: 0;
+		min-width: 100px;
+		background: #fff;
+	}
+	#attachments form,
+	#attachments fieldset,
+	#attachments table {
+		padding: 0;
+		margin: 0;
+	}
+	#attachments table {
+		width: auto;
+	}
+	#attachments tbody td {
+		padding: 0.2em 0.4em;
+	}
+	#attachments .delete {
+		padding-left: 0;
+		background: transparent;
+	}
+
+/* (sub) Tabs */
+	#sub-section-menu {
+		height: auto;
+		padding: 0;
+		background: none;
+		border: 3px double #ccc;
+	}
+	#sub-section-menu ul {
+		background: none;
+		border: none;
+		height: auto;
+		padding: 0;
+		margin: 0;
+	}
+	#sub-section-menu li {
+		height: auto;
+		padding: 0.2em 1em;
+		float: left;
+		display: block;
+		margin: 0;
+		background-image: none;
+	}
+	#sub-section-menu li a {
+		background: none;
+		height: auto;
+		padding: 0;
+		color: #BA7A75;
+	}
+	#sub-section-menu li a span {
+		background: none;
+		height: auto;
+		padding: 0;
+	}
+	#sub-section-menu li.active a {
+		color: #333;
+		border: none;
+	}
+	#sub-menu li.page-delete,
+	#sub-section-menu li.page-delete {
+		float: right;
+	}
+
+/* Table of contents */
+	.article-toc,
+	.article-search {
+		background-color: #eee;
+		margin: 0 0 1em 0;
+		padding: 0.5em;
+	}
+	.article-toc h3,
+	.article-search h3 {
+		margin: 0;
+		padding: 0.4em;
+		color: #fff;
+		background: #777;
+		font-size: 1em;
+		font-weight: bold;
+	}
+	.article-toc ul {
+		margin: 0;
+		padding: 0.4em;
+		max-height: 300px;
+		overflow: auto;
+		border: 1px solid #aaa;
+		background: #fff;
+	}
+	.article-toc ul li {
+		background-image: none;
+	}
+	.article-toc ul ul {
+		max-height: none;
+		border: none;
+		margin: 0 0 0 1em;
+		padding: 0;
+	}
+	.article-toc li {
+		margin: 0;
+		padding: 0.2em;
+	}
+	.tocnumber {
+		display: none;
+	}
+	.article-tags {
+		background: #F4F4F4 url("/components/com_wiki/assets/img/tag_orange.png") 0.5em 0.5em no-repeat;
+		margin: 0 0 1em 0;
+		padding: 0.5em 0.5em 0.4em 2em;
+	}
+	.com_groups .group_wiki .article-tags h3 {
+		display: none;
+	}
+	.article-tags ol {
+		margin: 0;
+		padding: 0;
+		max-height: none;
+		font-size: 90%;
+	}
+	.article-tags p {
+		margin: 0;
+		padding: 0;
+	}
+/* Timestamp */
+	.timestamp {
+		margin: 4em 0 1em 0;
+		padding: 0.5em 0.7em;
+		border-top: 1px solid #eee;
+		font-size: 90%;
+		color: #aaa;
+		background-color: #f4f4f4;
+		text-align: left;
+	}
+	.timestamp .article-usage {
+		float: right;
+	}
+	a.ext-link {
+		background: url("/components/com_wiki/assets/img/extlink.gif") 0 0.4em no-repeat;
+		padding-left: 15px;
+	}
+	a.missing {
+		background: url("/components/com_wiki/assets/img/missinglink.gif") 0 0.4em no-repeat;
+		padding-left: 7px;
+	}
+/* Diffs */
+	.diff-versions {
+		margin: 0;
+	}
+	.diff-versions dt {
+		font-weight: bold;
+		margin-top: 0.5em;
+	}
+	.diffs {
+		margin: 1em 0;
+		border: 2px solid #ccc;
+	}
+	.com_groups .main .subject table.diffs td, 
+	.com_groups .main .subject table.diffs th,
+	.diffs td, 
+	.diffs th {
+		border: 1px solid #fff;
+		margin: 0;
+		padding: 0.2em 0.8em;
+	}
+	.diffs th {
+		text-align: right;
+		background-color: #efefef;
+	}
+	.diff-marker {
+		width: 1em;
+		text-align: center;
+	}
+	.diff-deletedline {
+		border: 1px solid #EFCCC2; 
+		background: #FFF2EF;
+		margin: 1em 0;
+		padding: 1em;
+		color: #CC0000;
+	}
+	.diff-addedline {
+		border: 1px solid #DAE6DA;
+		background: #F2FFF2;
+		margin: 1em 0;
+		padding: 1em;
+		color: #360;
+	}
+	del.diffchange {
+		color: #CC0000;
+	}
+	ins.diffchange {
+		color: #360;
+	}
+	#file-uploader .qq-upload-button {
+		background:#222;
+		background-image: -webkit-linear-gradient(top, #444, #222);
+		background-image: -moz-linear-gradient(top, #444, #222);
+		background-image: -o-linear-gradient(top, #444, #222);
+		background-image: -ms-linear-gradient(top, #444, #222);
+		background-image: linear-gradient(top, #444, #222);
+		padding:10px;
+		position:relative;
+		color:#FFF;
+		text-align:center;
+		-webkit-border-radius:3px;
+		-moz-border-radius:3px;
+		border-radius:3px;
+		border:1px solid #000;
+		border-top:1px solid #666;
+		margin:0 0 10px 0;
+	}
+	#file-uploader .qq-upload-button:active {
+		background-image: -webkit-linear-gradient(top, #222, #444);
+		background-image: -moz-linear-gradient(top, #222, #444);
+		background-image: -o-linear-gradient(top, #222, #444);
+		background-image: -ms-linear-gradient(top, #222, #444);
+		background-image: linear-gradient(top, #222, #444);
+	}
+	#file-uploader .qq-upload-drop-area {
+		padding: 0.7em;
+		border: 1px solid #ccc;
+		-webkit-border-radius:3px;
+		-moz-border-radius:3px;
+		border-radius:3px;
+		background: #666;
+		color: #fff;
+		text-align: center;
+	}
+	#hubForm .explaination #file-uploader ul.qq-upload-list {
+		margin: 0;
+	}
+	#file-uploader .qq-upload-size {
+		margin: 0 0 0 2em;
+	}
+	#file-uploader .qq-upload-failed-text {
+		display: none;
+	}
+
+	#attachments {
+		margin: 0;
+		padding: 0;
+		min-width: 100px;
+		background: #fff;
+	}
+	#hubForm .explaination #attachments {
+		border: 1px solid #ccc;
+		max-height: 300px;
+		overflow: scroll;
+	}
+	#hubForm .explaination #attachments p {
+		margin: 0;
+		padding: 0.2em 0.5em;
+	}
+	#attachments form,
+	#attachments fieldset,
+	#attachments table {
+		padding: 0;
+		margin: 0;
+	}
+	#attachments table {
+		width: auto;
+	}
+	#attachments tbody td {
+		padding: 0.2em 0.4em;
+	}
+	#attachments tbody td span {
+		display: block;
+		overflow: scroll;
+		max-width: 180px;
+		word-wrap: break-word;
+	}
+	#attachments .delete {
+		padding-left: 0;
+		background: transparent;
+	}
+/* Admonitions */
+	div.admon-caution, 
+	div.admon-important, 
+	div.admon-note, 
+	div.admon-tip, 
+	div.admon-warning {
+		border: 1pt solid #E5E5E5;
+		background-color: #F9F9FF;
+		color: black;
+		margin: 10pt 30pt 10pt 30pt;
+		background-repeat: no-repeat;
+		background-position: 8px 8px;
+		min-height: 64px; /*64=48+8+8 but doesn't work with IE*/
+		padding-left: 64px;
+	}
+	div.admon-caution p, 
+	div.admon-important p, 
+	div.admon-note p, 
+	div.admon-tip p, 
+	div.admon-warning p {
+		margin-top: 8px; /*to align text with bg graphic*/
+	}
+	div.admon-tip { 
+		background-image: url("/components/com_wiki/assets/img/admon-tip.png"); 
+	}
+	div.admon-note { 
+		background-image: url("/components/com_wiki/assets/img/admon-note.png"); 
+	}
+	div.admon-important { 
+		background-image: url("/components/com_wiki/assets/img/admon-important.png"); 
+	}
+	div.admon-caution { 
+		background-image: url("/components/com_wiki/assets/img/admon-caution.png"); 
+	}
+	div.admon-warning { 
+		background-image: url("/components/com_wiki/assets/img/admon-warning.png"); 
+	}
+
+/* Wiki pages */
+	.wikipage {
+		margin: 0;
+		padding: 1em 0 0 18px;
+	}
+	.wikipage h1,
+	.wikipage h1,
+	.wikipage h2,
+	.wikipage h3,
+	.wikipage h4,
+	.wikipage h5,
+	.wikipage h6 {
+		color: #333;
+		text-shadow: none;
+		font-weight: bold;
+		padding: 0;
+		margin: 0.618em 0;
+		border: none;
+		line-height: 1.2;
+	}
+	.wikipage h1 {
+		font-size: 1.8em;
+	}
+	.wikipage h2 span {
+		color: #333;
+	}
+	.wikipage h1, 
+	.wikipage h2, 
+	.wikipage h3 {
+		margin-left: -18px;
+	}
+	.wikipage ul,
+	.wikipage ol {
+		padding: 0;
+		margin: 0 0 1em 0;
+	}
+	.wikipage ul {
+		list-style-type: disc;
+	}
+	.wikipage ol {
+		list-style-type: decimal;
+	}
+	.wikipage li {
+		padding: 0;
+		margin: 0em 0 0em 2em;
+	}
+	.wikipage ul li {
+	}
+	.wikipage dd {
+		color: #888;
+	}
+	.wikipage table {
+		border: 2px solid #ccc;
+		width: auto;
+	}
+	.wikipage table td, 
+	.wikipage table th {
+		border: 1px solid #ccc;
+		margin: 0;
+		padding: 0.2em 0.4em;
+	}
+	.wikipage blockquote {
+		margin: 2em 0 2.5em 0;
+		padding: 5px 0 5px 10px;
+	}
+	.wikipage blockquote:before {
+		display: none;
+	}
+	.wikipage pre {
+		font-family: "Bitstream Vera Sans Mono", Courier, Monaco, ProFont, "American Typewriter", "Andale Mono", monospace;
+		color: #555;
+		background: #f7f7f7;
+		border: 1px solid #d7d7d7;
+		margin: 1em 1.75em;
+		padding: .25em;
+		overflow: auto;
+		font-size: 0.85em;
+		line-height: 1.95em;
+		white-space: pre;
+		white-space: pre-wrap;
+		word-wrap: break-word;
+		white-space: -moz-pre-wrap;
+		white-space: -pre-wrap;
+		white-space: -o-pre-wrap;
+	}
+	.modified-date {
+		color: #aaa;
+		font-size: 90%;
+	}
+	.wikipage hr {
+		border-top: 1px solid #ccc;
+		background-image: none;
+		height: 1px;
+		width: auto;
+		visibility: visible;
+		display: block;
+	}
+
+	/* Links */
+	.wikipage a.ext-link {
+		background: url("/components/com_wiki/assets/img/extlink.gif") 0 0.4em no-repeat;
+		padding-left: 15px;
+	}
+	.wikipage a.missing {
+		background: url("/components/com_wiki/assets/img/missinglink.gif") 0 0.4em no-repeat;
+		padding-left: 7px;
+	}
+
+/* Figures */
+	.wikipage .figure {
+		display: inline-block;
+		background: #fff;
+		border: 1px solid #eaeaea;
+	}
+	.wikipage .figure img {
+		margin: 0;
+		padding: 0;
+		background: transparent;
+		text-align: center;
+	}
+	.wikipage .figure a {
+		border: none;
+	}
+	.wikipage .figcaption {
+		display: block;
+		margin: 0;
+		padding: 0.5em;
+		background: #efefef;
+	}
+
+/* Hide the sidebar if the page is too narrow */
+@media only screen and (max-width: 1064px) {
+	.group_wiki .aside,
+	.group_wiki .subject {
+		float: none;
+	}
+	.group_wiki .aside {
+		display: none;
+	}
+	.group_wiki .subject {
+		padding-left: 0;
+		padding-right: 0;
+		margin-right: 0;
+	}
+}

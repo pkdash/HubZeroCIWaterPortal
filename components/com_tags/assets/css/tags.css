@@ -1,0 +1,169 @@
+/**
+ * @package     hubzero-cms
+ * @file        components/com_tags/tags.css
+ * @copyright   Copyright 2005-2011 Purdue University. All rights reserved.
+ * @license     http://www.gnu.org/licenses/lgpl-3.0.html LGPLv3
+ */
+
+/*
+
+	-- -- -- -- -- -- --
+	com_tags CSS
+	-- -- -- -- -- -- --
+
+*/
+/* Intro */
+	#introduction:after {
+		content: "\f02c";
+	}
+
+/* Content blocks */
+	.container-block {
+		border: 2px solid #e9e9e9;
+		background-color: #fff;
+	}
+	.subject .container h3 {
+		border: none;
+		border-bottom: 1px solid #e9e9e9;
+	}
+
+/* Submenu */
+	.entries-menu:after {
+		content: "."; 
+		display: block; 
+		height: 2.5em; 
+		clear: left; 
+		visibility: hidden;
+	}
+
+/* Item listing */
+	.container .container-block {
+		margin: 0;
+		padding: 0;
+		border: 2px solid #e9e9e9;
+		background: #fff;
+	}
+	.container .category-wrap {
+		margin: 0;
+		padding: 0;
+		border: none;
+	}
+	.container .results {
+		border: none;
+		background: #fff;
+		margin: 0;
+		padding: 0;
+		clear: left;
+	}
+	.container .results li {
+		padding: 0.5em 1em;
+		border-top: 1px solid #efefef;
+		border-bottom: none;
+	}
+	.container .results p {
+		margin-left: 1em;
+	}
+	.container .results p.title {
+		margin-left: 0;
+	}
+	.container .results .event p.title {
+		margin-left: 4em;
+	}
+	.container .results .member p.title {
+		margin-left: 60px;
+	}
+	.com_tags .block {
+		padding: 1em;
+	}
+	.com_tags .moretags {
+		padding: 0.5em 1em;
+		margin-bottom: 0;
+		text-align: right;
+		background-color: #E3E3E3;
+	}
+
+/* Entries */
+	.entries tbody td a.entry-title {
+		font-size: 10px !important;
+		position: relative;
+		display: inline-block !important;
+		border: 0;
+		-webkit-border-radius: 0 3px 3px 0 !important;
+		-moz-border-radius: 0 3px 3px 0 !important;
+		border-radius: 0 3px 3px 0 !important;
+		line-height: 2em !important;
+		margin: 0 0 0 14px !important;
+		background: #333 !important;
+		color: #ccc !important;
+		padding: 2px 6px 2px 6px !important;
+	}
+	.entries tbody td a.entry-title span {
+		background-color: #444;
+		background-color: rgba(255, 255, 255, 0.2);
+		display: inline-block;
+		margin: -2px -6px -2px 4px;
+		padding: 2px 6px 2px 6px;
+		-webkit-border-radius: 0 3px 3px 0;
+		-moz-border-radius: 0 3px 3px 0;
+		border-radius: 0 3px 3px 0;
+	}
+	.entries tbody td a.entry-title:before {
+		content: "";
+		border-color: transparent #333 transparent transparent !important;
+		border-style: dashed solid dashed dashed !important;
+		border-width: 12px 12px 12px 0 !important;
+		height: 0;
+		width: 0;
+		display: block;
+		overflow: hidden;
+		position: absolute;
+		top: 0 !important;
+		left: -12px !important;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	.entries tbody td a.entry-title:after {
+		content: "";
+		height: 4px;
+		width: 4px;
+		display: block;
+		position: absolute;
+		top: 10px;
+		left: -3px;
+		background-color: #f6f6f6;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+	}
+	.entries tbody td a.entry-title:hover {
+		color: #fff;
+		background: #000 !important;
+	}
+	.entries tbody td a.entry-title:hover span {
+		background-color: #111;
+		background-color: rgba(255, 255, 255, 0.2);
+	}
+	.entries tbody td a.entry-title:hover:before {
+		border-color: transparent #000 transparent transparent !important;
+	}
+
+/* Misc. */
+	.tag-description {
+		margin: 0;
+		padding: 0 1em;
+	}
+	.tag-description .clearfix {
+		border-color: #fff;
+	}
+	.entries tbody td.tag-deleted {
+		background: #c14d33;
+		color: #FFF;
+		font-weight: bold;
+		font-size: 14px;
+		text-align: center;
+	}
+
+/* [!] HACKS - IE 7 and older */
+	#introduction {
+		*zoom:expression(this.runtimeStyle['zoom']='1', this.innerHTML='<small class="intro-before"></small>' + this.innerHTML + '<small class="intro-after">&#xf02c;</small>');
+	}

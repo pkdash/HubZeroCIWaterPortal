@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+@package        hubzero-cms
+@file           administrator/components/com_usage/config.xml
+@copyright      Copyright 2005-2011 Purdue University. All rights reserved.
+@license        http://www.gnu.org/licenses/lgpl-3.0.html LGPLv3
+
+Copyright 2005-2011 Purdue University. All rights reserved.
+
+This file is part of: The HUBzero(R) Platform for Scientific Collaboration
+
+The HUBzero(R) Platform for Scientific Collaboration (HUBzero) is free
+software: you can redistribute it and/or modify it under the terms of
+the GNU Lesser General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any
+later version.
+
+HUBzero is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+HUBzero is a registered trademark of Purdue University.
+-->
+
+<config>
+	<params>
+		<param name="statsDBDriver" type="text" menu="hide" label="Stats DB Driver" default="mysql" description="Stats DB Driver" />
+		<param name="statsDBHost" type="text" menu="hide" label="Stats DB Host" default="localhost" description="Stats DB Host" />
+		<param name="statsDBPort" type="text" menu="hide" label="Stats DB Port" default="" description="Stats DB Port" />
+		<param name="statsDBUsername" type="text" menu="hide" label="Stats DB Username" default="" description="Stats DB Username" />
+		<param name="statsDBPassword" type="text" menu="hide" label="Stats DB Password" default="" description="Stats DB Password" />
+		<param name="statsDBDatabase" type="text" menu="hide" label="Stats Database" default="" description="Stats Database" />
+		<param name="statsDBPrefix" type="text" menu="hide" label="Stats DB Prefix" default="" description="Stats DB Prefix" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="mapsApiKey" type="text" menu="hide" label="Maps API Key" default="ABQIAAAAPq8QOefNUw20Lc6RX2gKqhS52sOfLYQBjNjTIio4_8VA5UX1FxTHIAC1ueUqmMdrjD5WAr8YGW_jVQ" description="Google Maps API Key for this site" />
+		<param name="stats_path" type="text" menu="hide" label="Path" default="/site/usage" description="General path for storing stats related files" />
+		<param name="maps_path" type="text" menu="hide" label="Maps" default="/site/usage/maps" description="Path to maps" />
+		<param name="plots_path" type="text" menu="hide" label="Plots" default="/site/usage/plots" description="Path to plots" />
+		<param name="charts_path" type="text" menu="hide" label="Charts" default="/site/usage/charts" description="Path to charts" />
+	</params>
+</config>

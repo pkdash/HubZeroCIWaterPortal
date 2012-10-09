@@ -1,0 +1,97 @@
+/**
+ * @package     hubzero-cms
+ * @file        components/com_feedback/feedback.css
+ * @copyright   Copyright 2005-2011 Purdue University. All rights reserved.
+ * @license     http://www.gnu.org/licenses/lgpl-3.0.html LGPLv3
+ */
+
+/*
+
+	-- -- -- -- -- -- --
+	com_feedback CSS
+	-- -- -- -- -- -- --
+
+*/
+
+/* Intro */
+	#introduction:after {
+		content: "\f075";
+	}
+	#introduction {
+		*background-image: url("/components/com_feedback/assets/img/feedback-large.gif");
+		*background-position: 30px 25px;
+		*background-repeat: no-repeat;
+	}
+	.two div {
+		position: relative;
+		padding-left: 30px;
+	}
+	.two span.fontcon-before,
+	.two span.fontcon-after,
+	.two div:before,
+	.two div:after {
+		content: "";
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 20px;
+		height: 20px;
+		font-size: 20px;
+		line-height: 1;
+		font-family: 'Fontcons';
+		color: #aaa;
+	}
+	.two div.story:before {
+		content: "\275D";
+	}
+	.two div.story {
+		*zoom:expression(this.runtimeStyle['zoom']='1', this.innerHTML='<span class="fontcon-before">&#x275D;&nbsp;</span>' + this.innerHTML);
+	}
+	.two div.wish:before {
+		content: "\f078";
+	}
+	.two div.wish {
+		*zoom:expression(this.runtimeStyle['zoom']='1', this.innerHTML='<span class="fontcon-before">&#xf078;&nbsp;</span>' + this.innerHTML);
+	}
+	.two div.poll:before {
+		content: "\f080";
+	}
+	.two div.poll {
+		*zoom:expression(this.runtimeStyle['zoom']='1', this.innerHTML='<span class="fontcon-before">&#xf080;&nbsp;</span>' + this.innerHTML);
+	}
+	.two div.report:before {
+		content: "\f01f";
+	}
+	.two div.report {
+		*zoom:expression(this.runtimeStyle['zoom']='1', this.innerHTML='<span class="fontcon-before">&#xf01f;&nbsp;</span>' + this.innerHTML);
+	}
+	.two span.fontcon-before,
+	.two span.fontcon-after {
+		*top: 1.2em;
+	}
+/* Iframe */
+	iframe {
+		border: none;
+	}
+	#component-body fieldset {
+		margin: 1.5em 0 2em 0;
+		padding: 0.5em 0;
+	}
+	#component-body table,
+	#component-body td,
+	#component-body th {
+		border: none;
+	}
+	#hubForm label#fbBotcheck-label {
+		display: none;
+	}
+
+/* For the options to Poll */
+	ul {
+		margin: 1em 0 1em 0em;
+		list-style: none;
+	}
+	.introtext {
+		margin-top:5px;
+	}

@@ -1,0 +1,23 @@
+/**
+ * @package     hubzero-cms
+ * @file        modules/mod_mymessages/mod_mymessages.css
+ * @copyright   Copyright 2005-2011 Purdue University. All rights reserved.
+ * @license     http://www.gnu.org/licenses/lgpl-3.0.html LGPLv3
+ */
+
+/*
+
+	-- -- -- -- -- -- --
+	mod_mymessages
+	-- -- -- -- -- -- --
+
+*/
+	div.draggable .expandedlist li.actionitem {
+		background: #FFF2EF url("/modules/mod_mymessages/images/error.gif") 0.7em 1em no-repeat;
+	}
+	div.draggable .expandedlist li.actionitem a {
+		color: #c00;
+	}
+	div.draggable .expandedlist .box { 
+		background: url("/modules/mod_mymessages/images/box.png") 0.7em 1em no-repeat; 
+	}

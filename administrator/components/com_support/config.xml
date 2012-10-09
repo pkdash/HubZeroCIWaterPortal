@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+@package        hubzero-cms
+@file           administrator/components/com_support/config.xml
+@copyright      Copyright 2005-2011 Purdue University. All rights reserved.
+@license        http://www.gnu.org/licenses/lgpl-3.0.html LGPLv3
+
+Copyright 2005-2011 Purdue University. All rights reserved.
+
+This file is part of: The HUBzero(R) Platform for Scientific Collaboration
+
+The HUBzero(R) Platform for Scientific Collaboration (HUBzero) is free
+software: you can redistribute it and/or modify it under the terms of
+the GNU Lesser General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any
+later version.
+
+HUBzero is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+HUBzero is a registered trademark of Purdue University.
+-->
+
+<config>
+	<params>
+		<param name="feed_summary" type="radio" default="0" label="For each feed item show" description="TIPSHOWFEEDITEM">
+			<option value="0">Intro Text</option>
+			<option value="1">Full Text</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="severities" type="text" menu="hide" default="critical,major,normal,minor,trivial" label="Severities" description="Ticket severity levels" />
+		<param name="webpath" type="text" menu="hide" default="/site/tickets" label="Upload path" description="File path for attachments" />
+		<param name="maxAllowed" type="text" menu="hide" default="40000000" label="Max upload" description="Maximum upload file size" />
+		<param name="file_ext" type="textarea" rows="10" cols="30" menu="hide" label="Extensions" default="jpg,jpeg,jpe,bmp,tif,tiff,png,gif,pdf,zip,mpg,mpeg,avi,mov,wmv,asf,asx,ra,rm,txt,rtf,doc,xsl,html,js,wav,mp3,eps,ppt,pps,swf,tar,tex,gz" description="Allowed file types" />
+		<param name="group" type="text" menu="hide" label="Group" default="" description="Group ID to pull users from" />
+		<param name="emails" type="textarea" cols="30" rows="10" default="{config.mailfrom}" label="Notify when ticket created" description="Add a line for each email address a new ticket should be sent to." />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="blacklist" type="textarea" rows="15" cols="40" default="" description="A comma-separated list of IPs to be blacklisted" />
+		<param name="badwords" type="textarea" rows="15" cols="40" default="viagra, pharmacy, xanax, phentermine, dating, ringtones, tramadol, hydrocodone, levitra, ambien, vicodin, fioricet, diazepam, cash advance, free online, online gambling, online prescriptions, debt consolidation, baccarat, loan, slots, credit, mortgage, casino, slot, texas holdem, teen nude, orgasm, gay, fuck, crap, shit, asshole, cunt, fucker, fuckers, motherfucker, fucking, milf, cocksucker, porno, videosex, sperm, hentai, internet gambling, kasino, kasinos, poker, lottery, texas hold em, texas holdem, fisting" description="A comma-separated list of spam words" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="email_processing" type="list" default="0" label="Enable email interface" description="Allow for processing of responses via e-mail to ticketting system">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+    </params>
+</config>

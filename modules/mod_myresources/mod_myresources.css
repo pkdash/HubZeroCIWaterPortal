@@ -1,0 +1,25 @@
+/**
+ * @package     hubzero-cms
+ * @file        modules/mod_myresources/mod_myresources.css
+ * @copyright   Copyright 2005-2011 Purdue University. All rights reserved.
+ * @license     http://www.gnu.org/licenses/lgpl-3.0.html LGPLv3
+ */
+
+/*
+
+	-- -- -- -- -- -- --
+	mod_myresources
+	-- -- -- -- -- -- --
+
+*/
+
+/* Contribution status */
+	div.draggable .expandedlist li.draft {
+		background: url("/modules/mod_myresources/images/draft.gif") 0.7em 1em  no-repeat;
+	}
+	div.draggable .expandedlist li.published {
+		background: url("/modules/mod_myresources/images/check.gif") 0.7em 1em  no-repeat;
+	}
+	div.draggable .expandedlist li.pending {
+		background: url("/modules/mod_myresources/images/pending.gif") 0.7em 1em  no-repeat;
+	}
